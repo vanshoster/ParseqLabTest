@@ -7,7 +7,6 @@ plugins {
 }
 
 group = "ivan.nekrasov"
-version = "0.0.1"
 
 application {
     mainClass.set("ivan.nekrasov.ApplicationKt")
@@ -29,4 +28,5 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    testImplementation("org.skyscreamer:jsonassert:1.5.3")
 }
