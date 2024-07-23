@@ -28,6 +28,7 @@ The goal of this project is to create a REST HTTP service that provides annotati
    ```sh
    git clone https://github.com/vanshoster/ParseqLabTest.git
    cd ParseqLabTest
+   ```
 
 ### Build the Docker Image
 
@@ -35,6 +36,7 @@ In the root of the project directory, build the Docker image:
 
 ```sh
 docker build -t parseqlab-app:latest .
+```
 
 ### Run the Docker Container
 
@@ -42,6 +44,7 @@ Start a container with the built image:
 
 ```sh
 docker run -d -p 8080:8080 --name parseqlab-app parseqlab-app:latest
+```
 
 ### Verify the Deployment
 
@@ -52,5 +55,6 @@ Open your web browser and navigate to http://localhost:8080/first10 to ensure th
 
 To retrieve annotation information for a specific genetic variant, make a GET request to the `/info` endpoint with the appropriate query parameters. For example:
 
-```bash
-[http://localhost:8080/info?rac=NC_000001.11&lap=926024&rap=926026&refkey=A]
+```sh
+http://localhost:8080/info?rac=NC_000001.11&lap=926024&rap=926026&refkey=A
+```
