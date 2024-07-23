@@ -58,3 +58,19 @@ To retrieve annotation information for a specific genetic variant, make a GET re
 ```sh
 http://localhost:8080/info?rac=NC_000001.11&lap=926024&rap=926026&refkey=A
 ```
+
+This request will return JSON with the annotation details for the specified genetic variant:
+
+```json
+{
+    "rac": "NC_000001.11",
+    "lap": 926024,
+    "rap": 926026,
+    "refkey": "A",
+    "vcfId": "1555362",
+    "clnsig": "Likely_benign",
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnvc": "single_nucleotide_variant"
+}
+```
+
