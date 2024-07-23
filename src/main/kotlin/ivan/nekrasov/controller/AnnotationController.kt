@@ -14,7 +14,7 @@ fun Route.annotationRoutes(service: AnnotationService) {
         val refkey = call.request.queryParameters["refkey"]
 
         if (rac == null || lap == null || rap == null || refkey == null) {
-            call.respond(HttpStatusCode.BadRequest, "Missing parameters")
+            call.respond(HttpStatusCode.BadRequest, "Missing or invalid parameters")
             return@get
         }
 
