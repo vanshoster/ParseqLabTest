@@ -7,6 +7,7 @@ plugins {
 }
 
 group = "ivan.nekrasov"
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 application {
     mainClass.set("ivan.nekrasov.ApplicationKt")
